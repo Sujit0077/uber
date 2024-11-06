@@ -1,0 +1,30 @@
+1. Load and Explore Data
+Load the data from a CSV file.
+Check the first few rows to understand the dataset.
+Get summary statistics and information about the data (e.g., number of rows, columns, and data types).
+2. Preprocess Data
+Drop unnecessary columns (like Unnamed: 0, key).
+Extract useful information (like month and hour) from the pickup_datetime column.
+Handle missing values by replacing them with the average of that column.
+3. Calculate Distance
+Calculate the distance between pickup and dropoff locations using the Haversine formula (based on latitude and longitude).
+4. Handle Zero and Negative Values
+Replace zeros in certain columns with the average value of that column (e.g., passenger_count, distance).
+Fix negative or zero fare values by replacing them with the average fare amount.
+5. Remove Outliers
+Detect and remove outliers by clipping values that are too high or too low based on IQR (Interquartile Range).
+6. Visualize Data
+Use boxplots to visualize and detect outliers.
+Use a heatmap to show the correlation between different features.
+7. Split Data
+Separate the features (X) and target variable (fare amount, y).
+Split the data into training and testing sets (80% for training, 20% for testing).
+8. Train Models
+Train a Linear Regression model on the training data.
+Train a Random Forest model on the same training data.
+9. Make Predictions
+Predict the fare amount using both models (Linear Regression and Random Forest).
+10. Evaluate Models
+Compare the models using performance metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).
+11. Show Results
+Display a few actual vs predicted values to see how well the models performed.
